@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oficina de Robótica e Programação — IFRS-POA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== HEADER ========== -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="logo-group">
+          <img src="assets/IFRS-logo.jpg" alt="Logo IFRS" />
+          <img src="assets/mpieLogo.png" alt="Logo MPIE" />
+          <img src="assets/Robotif-este.svg" alt="Logo ROBOTIF" />
+        </div>
+        <div class="site-title">
+          <h1>Oficina de Robótica<br />e Programação</h1>
+          <p class="subtitle">IFRS-POA · MPIE · 2026</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <h2>Bem-vindo à Oficina!</h2>
+      <p>
+        Esta oficina faz parte de uma pesquisa do Mestrado Profissional em
+        Informática na Educação (MPIE) do Instituto Federal do Rio Grande do Sul
+        — Campus Porto Alegre, e será realizada com os alunos da
+        <strong
+          >Escola Estadual de Ensino Médio para Surdos Professora Lilia
+          Mazeron</strong
+        >.
+      </p>
+      <p>
+        Ao longo dos encontros, exploraremos conceitos de robótica e programação
+        utilizando o
+        <strong>Micro:bit</strong>, uma plataforma acessível e interativa que
+        permite criar projetos físicos e digitais de forma integrada.
+      </p>
+      <p>
+        O objetivo é investigar como atividades hands-on com robótica podem
+        contribuir para o aprendizado de lógica de programação, estimulando a
+        criatividade e o pensamento computacional dos participantes.
+      </p>
+    </section>
+
+    <!-- ========== EQUIPE ========== -->
+    <div style="background: var(--surface)">
+      <section class="section">
+        <h2 class="section-title">Equipe</h2>
+        <div class="team-grid">
+          <div class="card">
+            <div class="card-avatar">
+              <span class="initials">A</span>
+            </div>
+            <h3>Alexandre</h3>
+            <p class="role">Pesquisador</p>
+          </div>
+
+          <div class="card">
+            <div class="card-avatar">
+              <span class="initials">M</span>
+            </div>
+            <h3>Mario</h3>
+            <p class="role">Pesquisador / Facilitador</p>
+          </div>
+
+          <div class="card">
+            <div class="card-avatar">
+              <!-- Substitua pelo caminho da foto: <img src="assets/foto-richard.jpg" alt="Richard"> -->
+              <span class="initials">R</span>
+            </div>
+            <h3>Richard</h3>
+            <p class="role">Instrutor da Oficina</p>
+          </div>
+
+          <div class="card">
+            <div class="card-avatar">
+              <span class="initials">S</span>
+            </div>
+            <h3>Silvia</h3>
+            <p class="role">Pesquisadora</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========== ENCONTROS ========== -->
+    <div class="encontros-bg">
+      <section class="section">
+        <h2 class="section-title">Encontros</h2>
+
+        <!-- Tab buttons -->
+        <div class="tabs" role="tablist">
+          <button
+            class="tab-btn active"
+            role="tab"
+            aria-selected="true"
+            aria-controls="enc-1"
+            data-tab="enc-1"
+          >
+            1º Encontro
+          </button>
+          <!-- Adicione novos encontros aqui, exemplo:
+        <button class="tab-btn" role="tab" aria-selected="false"
+                aria-controls="enc-2" data-tab="enc-2">
+          2º Encontro
+        </button>
+        --></div>
+
+        <!-- 1º Encontro -->
+        <div id="enc-1" class="tab-panel active" role="tabpanel">
+          <div class="steps">
+            <!-- Passo 1 -->
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-body">
+                <h3>Apresentação da Equipe</h3>
+                <p>
+                  Apresentar aos participantes os membros da equipe envolvidos
+                  na oficina: Richard (instrutor), Silvia, Mario e Alexandre
+                  (facilitadores e pesquisadores).
+                </p>
+              </div>
+            </div>
+
+            <!-- Passo 2 -->
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-body">
+                <h3>Formulário Pré-oficina</h3>
+                <p>
+                  Aplicar o formulário da Pré-oficina, que contém perguntas
+                  sobre os conhecimentos prévios dos participantes.
+                </p>
+                <p>
+                  Os participantes devem responder de acordo com a seguinte
+                  escala:
+                </p>
+                <div class="likert" role="list">
+                  <div class="likert-item" role="listitem">
+                    <span class="num">1</span> Discordo totalmente
+                  </div>
+                  <div class="likert-item" role="listitem">
+                    <span class="num">2</span> Discordo parcialmente
+                  </div>
+                  <div class="likert-item" role="listitem">
+                    <span class="num">3</span> Nem concordo nem discordo
+                  </div>
+                  <div class="likert-item" role="listitem">
+                    <span class="num">4</span> Concordo parcialmente
+                  </div>
+                  <div class="likert-item" role="listitem">
+                    <span class="num">5</span> Concordo totalmente
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Passo 3 -->
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-body">
+                <h3>Responder o Formulário Pré-oficina</h3>
+                <div class="step-body-inner">
+                  <div class="step-body-content">
+                    <p>
+                      Usar o QR Code impresso ou o link abaixo para que os
+                      participantes possam acessar e responder o formulário.
+                    </p>
+                    <a
+                      class="form-btn form-btn-pre"
+                      href="https://forms.gle/g57WXirfVWWgJmc69"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 3v2h3.59L7.76 14.83l1.41 1.41L19 5.41V9h2V3h-7zm-1 15H5V8H3v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3h-2v3h-4z"
+                        />
+                      </svg>
+                      Acessar Formulário Pré-oficina
+                    </a>
+                  </div>
+                  <button
+                    class="qr-zoom-btn"
+                    data-qr-src="assets/qrCodeFormulario1.png"
+                    data-qr-caption="Formulário Pré-oficina"
+                    aria-label="Ampliar QR Code — Pré-oficina"
+                  >
+                    <img
+                      src="assets/qrCodeFormulario1.png"
+                      alt="QR Code — Formulário Pré-oficina"
+                      class="qr-code"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Passo 4 -->
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-body">
+                <h3>O que é o Micro:bit? — Oficina prática</h3>
+                <p>
+                  O <strong>BBC micro:bit</strong> é um computador de bolso
+                  programável criado para tornar o aprendizado de programação e
+                  eletrônica acessível e divertido. Ele possui sensores de
+                  temperatura, luz e movimento, botões físicos, uma matriz de 25
+                  LEDs, Bluetooth e conectores para componentes externos — tudo
+                  em uma placa do tamanho de um cartão de crédito. Pode ser
+                  programado de forma visual (blocos) ou em Python e JavaScript
+                  diretamente no navegador, sem instalar nada. Saiba mais no
+                  site oficial:
+                  <a
+                    href="https://makecode.microbit.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >microbit.org</a
+                  >.
+                </p>
+              </div>
+            </div>
+
+            <!-- Passo 5 -->
+            <div class="step">
+              <div class="step-number">5</div>
+              <div class="step-body">
+                <h3>Reflexão Final</h3>
+                <p>
+                  Momento de reflexão coletiva com os alunos: o que aprenderam,
+                  quais foram suas dificuldades e o que pode ser melhorado nos
+                  próximos encontros.
+                </p>
+              </div>
+            </div>
+
+            <!-- Passo 6 -->
+            <div class="step">
+              <div class="step-number">6</div>
+              <div class="step-body">
+                <h3>Formulário Pós-oficina</h3>
+                <div class="step-body-inner">
+                  <div class="step-body-content">
+                    <p>
+                      Usar o QR Code impresso ou o link abaixo para que os
+                      participantes possam acessar e responder o formulário
+                      Pós-oficina.
+                    </p>
+                    <a
+                      class="form-btn form-btn-pos"
+                      href="https://forms.gle/zEbAWYW21rMkiEET9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 3v2h3.59L7.76 14.83l1.41 1.41L19 5.41V9h2V3h-7zm-1 15H5V8H3v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3h-2v3h-4z"
+                        />
+                      </svg>
+                      Acessar Formulário Pós-oficina
+                    </a>
+                  </div>
+                  <button
+                    class="qr-zoom-btn"
+                    data-qr-src="assets/qrCodeFormulario2.png"
+                    data-qr-caption="Formulário Pós-oficina"
+                    aria-label="Ampliar QR Code — Pós-oficina"
+                  >
+                    <img
+                      src="assets/qrCodeFormulario2.png"
+                      alt="QR Code — Formulário Pós-oficina"
+                      class="qr-code"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .steps -->
+        </div>
+        <!-- #enc-1 -->
+      </section>
+    </div>
+    <!-- .encontros-bg -->
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+      <div class="footer-logos">
+        <img src="assets/IFRS-logo.jpg" alt="IFRS" />
+        <img src="assets/mpieLogo.png" alt="MPIE" />
+        <img src="assets/Robotif-este.svg" alt="ROBOTIF" />
+      </div>
+      <p>
+        Instituto Federal do Rio Grande do Sul — Campus Porto Alegre
+        &nbsp;·&nbsp; MPIE &nbsp;·&nbsp; 2026
+      </p>
+    </footer>
+
+    <!-- ========== QR MODAL ========== -->
+    <div
+      id="qr-modal"
+      class="qr-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="QR Code ampliado"
+    >
+      <div class="qr-modal-box">
+        <button class="qr-modal-close" id="qr-modal-close" aria-label="Fechar">
+          &times;
+        </button>
+        <img id="qr-modal-img" src="" alt="QR Code ampliado" />
+        <p class="qr-modal-caption" id="qr-modal-caption"></p>
+      </div>
+    </div>
+
+    <!-- ========== TABS JS ========== -->
+    <script>
+      (function () {
+        const buttons = document.querySelectorAll(".tab-btn");
+        const panels = document.querySelectorAll(".tab-panel");
+
+        buttons.forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            const target = btn.dataset.tab;
+
+            buttons.forEach(function (b) {
+              b.classList.remove("active");
+              b.setAttribute("aria-selected", "false");
+            });
+            panels.forEach(function (p) {
+              p.classList.remove("active");
+            });
+
+            btn.classList.add("active");
+            btn.setAttribute("aria-selected", "true");
+            document.getElementById(target).classList.add("active");
+          });
+        });
+      })();
+    </script>
+
+    <!-- ========== QR MODAL JS ========== -->
+    <script>
+      (function () {
+        var modal = document.getElementById("qr-modal");
+        var modalImg = document.getElementById("qr-modal-img");
+        var modalCaption = document.getElementById("qr-modal-caption");
+        var closeBtn = document.getElementById("qr-modal-close");
+
+        document.querySelectorAll(".qr-zoom-btn").forEach(function (btn) {
+          btn.addEventListener("click", function () {
+            modalImg.src = btn.dataset.qrSrc;
+            modalImg.alt = "QR Code — " + btn.dataset.qrCaption;
+            modalCaption.textContent =
+              "Aponte a câmera para o QR Code — " + btn.dataset.qrCaption;
+            modal.classList.add("open");
+            closeBtn.focus();
+          });
+        });
+
+        function closeModal() {
+          modal.classList.remove("open");
+          modalImg.src = "";
+        }
+
+        closeBtn.addEventListener("click", closeModal);
+
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) closeModal();
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") closeModal();
+        });
+      })();
+    </script>
+  </body>
+</html>
