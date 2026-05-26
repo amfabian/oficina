@@ -531,3 +531,205 @@ img {
     justify-content: center;
   }
 }
+
+/* ============================
+   Print Button
+   ============================ */
+.print-btn {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  z-index: 900;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  background: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition:
+    background var(--transition),
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.print-btn:hover {
+  background: var(--green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+.print-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+/* ============================
+   Print styles
+   ============================ */
+@media print {
+  /* Hide interactive / decorative elements */
+  .print-btn,
+  .tabs,
+  .qr-modal,
+  .site-footer {
+    display: none !important;
+  }
+
+  /* Reset page chrome */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+
+  /* Header */
+  .site-header {
+    border-bottom: 2pt solid #2e7d32;
+    padding: 0.5rem 1rem;
+  }
+
+  .logo-group img {
+    height: 50px;
+  }
+
+  .site-title h1 {
+    font-size: 14pt;
+    color: #1b5e20;
+  }
+
+  /* Hero: strip colour, keep text */
+  .hero {
+    background: none;
+    color: #000;
+    border-bottom: 1pt solid #ccc;
+    padding: 0.75rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 14pt;
+    color: #1b5e20;
+  }
+
+  .hero p {
+    font-size: 10pt;
+    opacity: 1;
+  }
+
+  /* Team */
+  .team-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card {
+    border: 1pt solid #ccc;
+    border-radius: 6px;
+    padding: 0.6rem;
+  }
+
+  .card-avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-avatar .initials {
+    font-size: 1.3rem;
+  }
+
+  /* Encontros: show all panels regardless of active state */
+  .encontros-bg {
+    background: none;
+    border: none;
+  }
+
+  .tab-panel {
+    display: block !important;
+  }
+
+  /* Steps */
+  .step {
+    border: 1pt solid #ccc;
+    border-radius: 6px;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .step-number {
+    background: #2e7d32;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+  }
+
+  /* QR codes: keep visible, adjust size */
+  .qr-zoom-btn {
+    cursor: default;
+    border: 1pt solid #ccc;
+  }
+
+  .qr-code {
+    width: 220px;
+    height: 220px;
+  }
+
+  /* Show form URLs after link text */
+  .form-btn {
+    background: none !important;
+    color: #000 !important;
+    border: 1pt solid #999;
+    border-radius: 4px;
+    font-size: 9pt;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .form-btn svg {
+    display: none;
+  }
+
+  .form-btn::after {
+    content: " — " attr(href);
+    font-size: 8pt;
+    color: #444;
+    font-weight: 400;
+  }
+
+  /* Likert pills */
+  .likert-item {
+    border: 1pt solid #ccc;
+    font-size: 9pt;
+  }
+
+  /* Section titles */
+  .section-title {
+    border-left: 4pt solid #2e7d32;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    color: #1b5e20;
+    font-size: 13pt;
+  }
+
+  /* Page breaks */
+  .section {
+    padding: 0.5rem 1rem;
+  }
+
+  .encontros-bg .section {
+    padding-top: 0.5rem;
+  }
+}
