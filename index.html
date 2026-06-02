@@ -91,7 +91,7 @@
     <!-- ========== ENCONTROS ========== -->
     <div class="encontros-bg">
       <section class="section">
-        <h2 class="section-title">Encontros</h2>
+        <h2 class="section-title no-print">Encontros</h2>
 
         <!-- Tab buttons -->
         <div class="tabs" role="tablist">
@@ -99,20 +99,108 @@
             class="tab-btn active"
             role="tab"
             aria-selected="true"
+            aria-controls="enc-2"
+            data-tab="enc-2"
+          >
+            2º Encontro
+          </button>
+          <button
+            class="tab-btn"
+            role="tab"
+            aria-selected="false"
             aria-controls="enc-1"
             data-tab="enc-1"
           >
             1º Encontro
           </button>
-          <!-- Adicione novos encontros aqui, exemplo:
-        <button class="tab-btn" role="tab" aria-selected="false"
-                aria-controls="enc-2" data-tab="enc-2">
-          2º Encontro
-        </button>
-        --></div>
+        </div>
+
+        <!-- 2º Encontro -->
+        <div id="enc-2" class="tab-panel active" role="tabpanel">
+          <h2 class="section-title print-only">2º Encontro</h2>
+          <div class="steps">
+            <!-- Passo 1 -->
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-body">
+                <h3>Apresentação do Scratch</h3>
+                <p>
+                  Apresentar aos participantes a ferramenta <strong>Scratch</strong>, uma plataforma de programação visual desenvolvida pelo MIT que utiliza blocos de encaixar. Os participantes aprenderão sobre a interface do Scratch, o palco (stage), os atores (sprites), os cenários (backdrops) e os blocos de comandos.
+                </p>
+                <p>
+                  Acesse o site oficial para começar a explorar:
+                  <a
+                    href="https://scratch.mit.edu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >scratch.mit.edu</a
+                  >.
+                </p>
+              </div>
+            </div>
+
+            <!-- Passo 2 -->
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-body">
+                <h3>Criar um Jogo no Scratch</h3>
+                <p>
+                  Atividade prática onde os participantes irão desenvolver um jogo no Scratch. Eles aprenderão a mover atores na tela, a criar interações simples e a aplicar conceitos de lógica de programação (como condições e repetições) de forma lúdica.
+                </p>
+              </div>
+            </div>
+
+            <!-- Passo 3 -->
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-body">
+                <h3>Responder a Pesquisa sobre a Oficina</h3>
+                <div class="step-body-inner">
+                  <div class="step-body-content">
+                    <p>
+                      Usar o QR Code ao lado ou o link abaixo para responder à pesquisa sobre a oficina.
+                    </p>
+                    <a
+                      class="form-btn form-btn-pre"
+                      href="https://forms.gle/yxeQzkWmdA82aJHL9"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M14 3v2h3.59L7.76 14.83l1.41 1.41L19 5.41V9h2V3h-7zm-1 15H5V8H3v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3h-2v3h-4z"
+                        />
+                      </svg>
+                      Acessar Pesquisa da Oficina
+                    </a>
+                  </div>
+                  <button
+                    class="qr-zoom-btn"
+                    data-qr-src="assets/QRCode_Encontro2.png"
+                    data-qr-caption="Pesquisa da Oficina — Encontro 2"
+                    aria-label="Ampliar QR Code — Pesquisa da Oficina"
+                  >
+                    <img
+                      src="assets/QRCode_Encontro2.png"
+                      alt="QR Code — Pesquisa da Oficina"
+                      class="qr-code"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .steps -->
+        </div>
+        <!-- #enc-2 -->
 
         <!-- 1º Encontro -->
-        <div id="enc-1" class="tab-panel active" role="tabpanel">
+        <div id="enc-1" class="tab-panel" role="tabpanel">
+          <h2 class="section-title print-only">1º Encontro</h2>
           <div class="steps">
             <!-- Passo 1 -->
             <div class="step">

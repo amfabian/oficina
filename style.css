@@ -572,9 +572,24 @@ img {
 }
 
 /* ============================
+   Helper Utilities
+   ============================ */
+.print-only {
+  display: none !important;
+}
+
+/* ============================
    Print styles
    ============================ */
 @media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
   /* Hide interactive / decorative elements */
   .print-btn,
   .tabs,
@@ -648,13 +663,17 @@ img {
     font-size: 1.3rem;
   }
 
-  /* Encontros: show all panels regardless of active state */
+  /* Encontros: show only the active panel when printing */
   .encontros-bg {
     background: none;
     border: none;
   }
 
   .tab-panel {
+    display: none !important;
+  }
+
+  .tab-panel.active {
     display: block !important;
   }
 
