@@ -572,6 +572,117 @@ img {
 }
 
 /* ============================
+   Upcoming Activities & Arduino Styles
+   ============================ */
+.proximas-atividades {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.25rem;
+}
+
+.atividade-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition:
+    transform var(--transition),
+    box-shadow var(--transition);
+}
+
+.atividade-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.atividade-item h4 {
+  font-size: 1.1rem;
+  color: var(--green-dark);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.atividade-item h4 svg {
+  flex-shrink: 0;
+  fill: currentColor;
+}
+
+.atividade-item p {
+  margin-bottom: 0.75rem;
+}
+
+.arduino-info {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1.25rem;
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.arduino-text {
+  flex: 1;
+}
+
+.arduino-text strong {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.arduino-text p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.arduino-image-container {
+  flex-shrink: 0;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbfbfb;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.arduino-img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: contain;
+  transition: transform var(--transition);
+}
+
+.arduino-img:hover {
+  transform: scale(1.04);
+}
+
+@media (max-width: 768px) {
+  .arduino-info {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .arduino-image-container {
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+}
+
+/* ============================
    Helper Utilities
    ============================ */
 .print-only {
@@ -750,5 +861,41 @@ img {
 
   .encontros-bg .section {
     padding-top: 0.5rem;
+  }
+
+  /* Upcoming activities & Arduino print styles */
+  .atividade-item {
+    border: 1pt solid #ddd;
+    border-radius: 6px;
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  .atividade-item h4 {
+    margin-bottom: 0.25rem;
+    font-size: 11pt;
+  }
+
+  .arduino-info {
+    border: 1pt solid #ddd;
+    background: none !important;
+    padding: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    box-shadow: none !important;
+  }
+
+  .arduino-text p {
+    font-size: 9pt;
+  }
+
+  .arduino-image-container {
+    width: 100px;
+    padding: 0;
+    border: none;
+    background: none;
   }
 }
